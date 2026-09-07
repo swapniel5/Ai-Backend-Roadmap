@@ -1,0 +1,3 @@
+Python makes file operations readable and concise.
+The with statement closes files automatically.
+Good error handling makes programs easier to use.
