@@ -4,8 +4,8 @@ Update this checklist as you finish work. A completed item should have code, not
 
 ## Setup
 
-- [ ] Install Python 3.12+ and confirm `python --version`.
-- [ ] Create and activate a project virtual environment.
+- [x] Install Python 3.12+ and confirm `python --version`.
+- [x] Create and activate a project virtual environment.
 - [ ] Install Jupyter, NumPy, pandas, matplotlib, scikit-learn, and PyTorch.
 - [ ] Configure your IDE for Python and Jupyter notebooks.
 - [ ] Create a GitHub remote and push this repository.

@@ -103,7 +103,45 @@ Expected response:
 {"message":"FastAPI service is running"}
 ```
 
-## 8. Open the automatic API documentation
+## 8. Try the task CRUD API
+
+Create a task:
+
+```bash
+curl -X POST http://127.0.0.1:8000/tasks \
+  -H "Content-Type: application/json" \
+  -d '{"title":"Learn FastAPI","description":"Build a CRUD endpoint"}'
+```
+
+List all tasks:
+
+```bash
+curl http://127.0.0.1:8000/tasks
+```
+
+Get one task:
+
+```bash
+curl http://127.0.0.1:8000/tasks/1
+```
+
+Update a task:
+
+```bash
+curl -X PUT http://127.0.0.1:8000/tasks/1 \
+  -H "Content-Type: application/json" \
+  -d '{"title":"Learn FastAPI CRUD","description":"Practice update requests"}'
+```
+
+Delete a task:
+
+```bash
+curl -i -X DELETE http://127.0.0.1:8000/tasks/1
+```
+
+The task data is stored only in memory and is reset when the server restarts.
+
+## 9. Open the automatic API documentation
 
 FastAPI generates interactive documentation automatically:
 
@@ -111,7 +149,7 @@ FastAPI generates interactive documentation automatically:
 - ReDoc: http://127.0.0.1:8000/redoc
 - OpenAPI JSON: http://127.0.0.1:8000/openapi.json
 
-## 9. Stop the server and leave the environment
+## 10. Stop the server and leave the environment
 
 In the terminal running Uvicorn, press:
 
